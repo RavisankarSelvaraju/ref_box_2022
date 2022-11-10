@@ -16,6 +16,13 @@
 
   ## HowTo
 
+  you need both fkie_master_discovery and fkie_master_sync
+  Run the master discovery node in the robot:
+
+  ```
+  rosrun fkie_master_discovery master_discovery
+  ```
+
   ### Starting the Refbox
 
   1. Start the __core__ and __com__ components:
