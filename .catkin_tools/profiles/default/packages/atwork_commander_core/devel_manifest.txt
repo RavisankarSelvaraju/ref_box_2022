@@ -1,0 +1,10 @@
+atwork_commander_core
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/cmake.lock /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/./cmake.lock
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/share/atwork_commander_core/cmake/atwork_commander_coreConfig.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_core/cmake/atwork_commander_coreConfig.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/share/atwork_commander_core/cmake/atwork_commander_coreConfig-version.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_core/cmake/atwork_commander_coreConfig-version.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/libatwork_commander_core_control.so /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/libatwork_commander_core_control.so
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/atwork_commander_core/control /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_core/control
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/atwork_commander_core/external /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_core/external
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/atwork_commander_core/atwork_commander_core_node /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_core/atwork_commander_core_node
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/atwork_commander_core/control_test /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_core/control_test
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_core/lib/pkgconfig/atwork_commander_core.pc /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/pkgconfig/atwork_commander_core.pc

@@ -1,0 +1,7 @@
+atwork_commander_gui
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/cmake.lock /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/./cmake.lock
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/share/atwork_commander_gui/cmake/atwork_commander_guiConfig-version.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_gui/cmake/atwork_commander_guiConfig-version.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/share/atwork_commander_gui/cmake/atwork_commander_guiConfig.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_gui/cmake/atwork_commander_guiConfig.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/lib/libatwork_commander_gui.so /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/libatwork_commander_gui.so
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/lib/pkgconfig/atwork_commander_gui.pc /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/pkgconfig/atwork_commander_gui.pc
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_gui/lib/atwork_commander_gui/task_viz_node /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_gui/task_viz_node

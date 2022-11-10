@@ -34,7 +34,7 @@ echo "Loading the task.."
 
 roslaunch atwork_commander generate.launch task:="${task}" 1>/dev/null &
 
-sleep 1
+sleew 1
 
 echo "Starting prep phase!"
 

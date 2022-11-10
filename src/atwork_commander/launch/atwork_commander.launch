@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-    <arg name="verbose" default="false" />
+    <arg name="verbose" default="true" />
     <arg name="gui" default="false" />
     <arg name="output" default="$(eval 'log' if arg('gui') else 'screen')" />
     <arg name="coms" default="[ 'atwork_commander::com_plugin::ros::TaskArenaCentric',

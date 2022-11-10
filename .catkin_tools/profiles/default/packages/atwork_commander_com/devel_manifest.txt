@@ -1,0 +1,10 @@
+atwork_commander_com
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/cmake.lock /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/./cmake.lock
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/share/atwork_commander_com/cmake/atwork_commander_comConfig.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_com/cmake/atwork_commander_comConfig.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/share/atwork_commander_com/cmake/atwork_commander_comConfig-version.cmake /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/share/atwork_commander_com/cmake/atwork_commander_comConfig-version.cmake
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/libatwork_commander_com_ros.so /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/libatwork_commander_com_ros.so
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/atwork_commander_com/robot_example_object_centric /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_com/robot_example_object_centric
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/atwork_commander_com/server_dummy /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_com/server_dummy
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/atwork_commander_com/communication /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_com/communication
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/atwork_commander_com/robot_example_arena_centric /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/atwork_commander_com/robot_example_arena_centric
+/home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/.private/atwork_commander_com/lib/pkgconfig/atwork_commander_com.pc /home/ravi/work/bit-bots/other_repos/ref_box_2022/devel/lib/pkgconfig/atwork_commander_com.pc
