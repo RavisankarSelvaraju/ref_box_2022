@@ -2,7 +2,7 @@
 
 <launch>
   <arg name="refbox" default="atwork_commander"/>
-  <arg name="verbose" default="false"/>
+  <arg name="verbose" default="true"/>
   <arg name="output" default="screen"/>
   <arg name="continuous" default="false"/>
 

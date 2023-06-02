@@ -1,9 +1,10 @@
 BTT2:
   prep_time: 3
   exec_time: 10
-  objects: 6
-  decoys: 3
-  tables: 5
+  objects: 5
+  decoys: 2
+  tables: 4
   arbitrary_surfaces: 2
   obstacles: 2
   tt_placing: 1
+  normal_table_types: ["0","5","10","15"]

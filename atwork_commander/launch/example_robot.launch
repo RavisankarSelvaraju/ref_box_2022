@@ -4,7 +4,7 @@
   <arg name="refbox" default="atwork_commander"/>
   <arg name="team" default="example_team"/>
   <arg name="robot" default="example_robot"/>
-  <arg name="multimaster" default="true"/>
+  <arg name="multimaster" default="false"/>
   <arg name="output" default="log"/>
   <arg name="object_centric" default="false"/>
 

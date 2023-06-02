@@ -1,0 +1,16 @@
+ATT1:
+  prep_time: 3
+  exec_time: 10
+  objects: 7
+  decoys: 5
+  tables: 6
+  shelfes_grasping: 1
+  container_placing_r: 1
+  container_placing_b: 1
+  arbitrary_surfaces: 3
+  obstacles: 2
+  barrier_tapes: 2
+  tt_grasping: 1
+  ref_cavity_position: true
+  ref_cavity_rotation: true
+  normal_table_types: ["0","5","10","15"]
