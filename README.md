@@ -13,107 +13,76 @@
   are configurable using the ROS parameters in order to be easily adaptable for
   any future changes in rules.
 
+# How to run the Refbox 
 
-  ## HowTo
+## Run in Robot 
 
-  ### Starting the Refbox
+### Assumption:
 
-  1. Start the __core__ and __com__ components:
-  ```
-  roslaunch atwork_commander atwork_commander.launch
-  ```
-  2. Generate a task using the CLI:
-  ```
-  roslaunch atwork_commander generate.launch task:=<task to generate>
-  ```
-  3. Wait for robots to register
-  4. Start the task execution using the CLI:
-  ```
-  roslaunch atwork_commander start.launch
-  ```
+- All other "bringup", "planning_bringup", "nav2d" and other(if available) components of the robot is running already
+- Robot is localized 
 
-  For testing the Refbox without any robot a fake robot may be used using the **example_robot**:
-  `roslaunch atwork_commander example_robot.launch`
+1. Run the master discovery node on the robot
+```
+rosrun fkie_master_discovery master_discovery
+```
 
-  ### Configurations
+2. Listen to the /task topic in the robot 
+```
+rostopic echo /atwork_commander/task
+```
 
-  - All launch files share the __refbox__ parameter to specify the Refbox to connect
-    to. Multiple Refboxes can be started on the same PC using multiple namespaces.
-  - When more information is needed, the __verbose__ parameter can be enabled for
-    more verbose logging.
-  - If a task needs to be sent to only some registered robots, the robots can be
-    specified in the __start__ command using the robots parameter in the format
-    "<team_name>/<robot_name>"
+3. Run "Skynet" after generating the task from Local PC
 
-  ### Runtime control
+```
+roslaunch mir_planning_core task_planning_sm.launch
+```
 
-  - the __forward__ launch file enables manual state change from *PREPARATION* to *EXECUTION*:
-  ```
-  roslaunch atwork_commander forward.launch
-  ```
-  - the __stop__ launch file enables stopping of the currently running task:
-  ```
-  roslaunch atwork_commander stop.launch
-  ```
+## Run in Local PC
 
-### Easy to use script
+1. Run "roscore" in the local PC
 
-You can use the script "default_bringup" which automates the refbox startup.
-Its purpose is mainly for new teams so that they can create bagfiles for tasks more easily.
-You can also use it for normal refbox startup, however you will need to kill the nodes afterwards manually..
-The cleanup is done automatically if you set the  **_immediate** param to **True**
+```
+roscore
+```
 
-Use e.g. this command to start the script (replace the task for the one you want):
+2. Export the robot in two terminals in the local PC 
+```
+export ROS_MASTER_URI=http://<robot_ip>:11311
+```
+Warning: If the robot's roscore is not exported to the local terminal then the atwork_commander cannot change from 
+IDLE -> Ready state
 
-`rosrun atwork_commander default_bringup _task:=BTT1 _immediate:=True _record_rosbag:=True`
+3. Run "atwork_commander" in a terminal 
 
-NOTE: This requires rosbash to be installed:
-`sudo apt install ros-melodic-rosbash ros-melodic-rosbash-params`
+```
+roslaunch atwork_commander atwork_commander.launch 
+```
+Note: 
+- This terminal will be the primary monitoring place where all the stage changes can be monitored 
+- There is a --verbose command flag in the launch file, enable it to see the generated plan 
 
-You can also modify the script to use other launchfiles than the default ones provided within this package.
-This is especially useful for your own arena configurations and robot descriptions.
+4. Generate plan
 
-## Documentation
+ ```
+ roslaunch atwork_commander generate.launch task:=<task to generate>
+ ```
+Note:
+- Example tasks : BMT, RTT, BTT1 etc.
+- After task generation the robot will be in READY state.
 
-Currently in the __docu__ folder. Multiple '.graphml' files showing the design
-of the architecture and the future GUI (Viewable and editable with e.g.
-[yEd Graph Editor](https://www.yworks.com/products/yed))
-[Source Code Reference](https://steup.github.io/atwork-commander)
+5. Start "skynet" in the robot
 
-[Issues, Milestones and Releases](https://github.com/robocup-at-work/atwork-commander)
+6. Change State of robot from READY to PREPARATION
 
-## Sub-Components
+```
+roslaunch atwork_commander start.launch 
+```
 
-The following section will briefly summarize the individual components purpose.
-For further information, please have a look at the respective sub-components' README.md.
+7. Change State of robot from PREPARATION to EXECUTION
 
-### [atwork\_commander\_core](atwork_commander_core/README.md)
+```
+roslaunch atwork_commander forward.launch 
+```
 
-State-Machine implementation, Pub/Sub and Service implementations to couple all
-sub-components.
-
-### [atwork\_commander\_msgs](atwork_commander_msgs/README.md)
-
-Contains ROS messages and service descriptions necessary to communicate within
-the Refbox.
-
-### [atwork\_commander\_com](atwork_commander_com/README.md)
-
-Will contain multiple communication plugins to enable flexible communication
-links to various types of robots.
-
-### [atwork\_commander\_gui](atwork_commander_gui/README.md)
-
-Aims to enable visualization and control of multiple aspects of a Task before,
-during and after a run.
-
-### [atwork\_commander\_gen](atwork_commander_gen/README.md)
-
-Enable dynamic task generation according to specified task types of the
-[@Work RuleBook](https://github.com/robocup-at-work/rulebook).
-
-## TODOs
-
-- GUI is currently mockup only
-- COM only contains two multi-master ROS communication plugins
-- New JurekGen should be fully RuleBook compatible
+Note: ROBOT should start moving after this step 
