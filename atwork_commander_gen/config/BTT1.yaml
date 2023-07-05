@@ -6,6 +6,6 @@ BTT1:
   tables: 3
   ref_position: true
   ref_rotation: true
-  arbitrary_surfaces: 1
-  barrier_tapes: 2
+  arbitrary_surfaces: 0
+  barrier_tapes: 0
   normal_table_types: [ "10" ]

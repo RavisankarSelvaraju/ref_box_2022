@@ -4,12 +4,13 @@ ATT1:
   objects: 6
   decoys: 3
   tables: 5
-  shelfes_grasping: 2
+  shelfes_grasping: 0
   shelfes_placing: 1
   arbitrary_surfaces: 2
-  obstacles: 2
+  obstacles: 0
   barrier_tapes: 2
   pp_placing: 1
+  tt_grasping: 0
   ref_cavity_position: true
   ref_cavity_rotation: true
-  normal_table_types: ["0","5","10","15"]
+  normal_table_types: ["0","5","10","15","SH","PP"]

@@ -1,6 +1,6 @@
 FINAL:
   prep_time: 5
-  exec_time: 13
+  exec_time: 14
   objects: 10
   decoys: 8
   tables: 8
@@ -8,6 +8,7 @@ FINAL:
   barrier_tapes: 2
   arbitrary_surfaces: 4
   pp_placing: 2
+  container_placing: 4
   container_placing_r: 2
   container_placing_b: 2
   paired_containers: true
@@ -22,4 +23,4 @@ FINAL:
   ref_cavity_position: true
   ref_cavity_rotation: true
   ref_cavity_orientation: true
-  normal_table_types: ["0","5","10","15"]
+  normal_table_types: ["0","5","10","15", "SH", "PP", "TT"]
